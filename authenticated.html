@@ -11,6 +11,7 @@ Authenticated Liveperson challenge
 <body>
 Authenticated Liveperson challenge
   <script>
+    console.log('V1')
     // Initialize the lpTag namespace and the identity array, if the identity function is placed above the tag.
   // var lpTag = {};
   lpTag.identities = [];
@@ -18,7 +19,7 @@ Authenticated Liveperson challenge
   
   function identityFn(callback) {
       callback({
-          iss: "http://127.0.0.1:5500/authenticated.html",
+          iss: "Ashu",
           acr: "loa1",
           sub: "16723672"
       });
@@ -74,9 +75,8 @@ lpTag.sdes.send(data, fun);
   }
 });
   function getAuthToken(callback) {
-    console.log('Authentication token requested by Liveperson');
-    // const id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2phcmFra2FsLmdpdGh1Yi5pbyIsImFjciI6ImxvYTEiLCJzdWIiOiIxNjcyMzY3MiIsIm5hbWUiOiJKb2huIERvZSIsImFkbWluIjp0cnVlLCJpYXQiOjE0NDYxMTE3NTIsImV4cCI6MTYzNjk1MzY0NywicHJlZmVycmVkX3VzZXJuYW1lIjoiSm9obkRvZSIsInBob25lX251bWJlciI6IisxLTEwLTM0NC0zNzY1MzMzIn0.m4A9ZbW1F9Y693_nLnvgCfuRKzOM7HYHzmH0DNXRIm4Cx5o5KDz4eoo6pYbuwwTVJq5a5jHx15Qan4bMF0kULOThk6gsN7q06055-cfJxZhMKrKV3cxgpxr2OY5dkWByoIdGeIOqCzo51jLbWFrKWBuFF7TB_WZcx1zdaDjbV5suTQRmZY3TQIAZFeLPeXyotZ4YaD7rH9Ddhz9LJf2qVgehvuFQK8p_u1-qZr2LSva5kOM5AkWpIDommddlC2AT40v6WpzkpX8Xe98ibVvB4NBm-_vS2lcLrNQwHOXdUYcyDv2NPdBsT9McoSBZkGnnlQid3tB84NW48_5o0DEA8Q";
-    const id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2phcmFra2FsLmdpdGh1Yi5pbyIsImFjciI6ImxvYTEiLCJzdWIiOiIxNjcyMzY3MiIsIm5hbWUiOiJKb2huIERvZSIsImFkbWluIjp0cnVlLCJpYXQiOjE0NDYxMTE3NTIsImV4cCI6MTcxNDE4NTU4MCwicHJlZmVycmVkX3VzZXJuYW1lIjoiSm9obkRvZSIsInBob25lX251bWJlciI6IisxLTEwLTM0NC0zNzY1MzMzIn0.FTgv11Bn68_RZCsTQAN-90fj40GCWMPEUD7-0GhGUB2S58V1vpgg2nts5mpKLChzUljpQFqglQrME13aHWC0KZ4FOHElj8vei50xbVQV9ctMkDUcd19mXUEI6eb-oubEGCKGyVz-Le1-VyrS9O6-jbTEdWHSAVtpMZGMW2uqEutgmreOVZfNuqHg-l9jeZUk9BVqvy4FvXIawTOKeDwoaZo6Y1-PGLRFcEa6ZL3A3SSl5FmNIUE3NgvsBAtPvJae5NQIpxc1kAbMfVagb8o1XvulEzUcumPkDNziQJeqjlADPvo9X-GXmEUxoJYdqsGA0n0237UyO3mIYK-YwGHW9Q";
+    console.log('Authentication token requested by Liveperson v1');
+    const id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBc2h1IiwiYWNyIjoibG9hMSIsInN1YiI6IjE2NzIzNjcyIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTQ0NjExMTc1MiwiZXhwIjoxNzE0MTg1NTgwLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJBc2hpc2hTaW5naCIsInBob25lX251bWJlciI6IisxLTEwLTM0NC0zNzY1MzMzIn0.JK4QnBb8XNraDFhWTu4_8vITpUt4-o1uPxd5UBxw_XGv698IquZBtXpbnh56uDelokoy4E3ZSpOT0VPxQQOu8iIQFpHT_Fkc6jjZ7RPF9abB3Ooj5HHvhg_-VHPszPkkinOQC4HImHKpDxuSVbfjR0dxSCQliLsB0DGyicvhBlIteOXR_rYUw8QKO4SZlMh200B2TnM3csQtJUb4ueBFXzM5ljtbFn6nwX9w8XvGqADnjaZDWy7aU7gdB-J3mTlkNe-5N-abN9P8ZfV1-Ebl2j2pD5gfX0JcMe7rBlYC_-oS6UO7gBU--dSr79fZFyuylZbfHW__dNDWbhtmDtTGtQ";
     callback(id_token);            
   }
   </script>
