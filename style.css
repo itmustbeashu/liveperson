@@ -1,0 +1,47 @@
+.main-button {
+    
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button-red {
+    background-color: #c22b11; /* Red */
+  }
+
+  .button-green {
+    background-color: #36d816; /* Green */
+  }
+
+  .logged-in {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+  .home {
+    background-color: #1e8fac; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
