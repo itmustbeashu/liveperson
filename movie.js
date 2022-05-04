@@ -19,11 +19,11 @@ var updateCallback = function(data){
     }
     ).then(function(res){
      
-    document.getElementById("title").innerHTML = res.Title;
-    document.getElementById("actor").innerHTML = res.Actors;
-    document.getElementById("genre").innerHTML = res.Genre;
-    document.getElementById("director").innerHTML = res.Director;
-    document.getElementById("language").innerHTML = res.Language;
+    document.getElementById("title").innerHTML = res.Title?res.Title:'N/A';
+    document.getElementById("actor").innerHTML = res.Actors?res.Actors:'N/A';
+    document.getElementById("genre").innerHTML = res.Genre?res.Genre:'N/A';
+    document.getElementById("director").innerHTML = res.Director?res.Director:'N/A';
+    document.getElementById("language").innerHTML = res.Language?res.Language:'N/A';
     document.getElementById("poster").src = res.Poster?res.Poster:defaultImage;
 
     
