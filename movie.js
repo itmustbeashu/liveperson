@@ -1,7 +1,7 @@
 var updateCallback = function(data){
     
     const apiKey = '611fd8da';
-    const defaultImage = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Fpressroom%2Fbrand-guidelines%2F&psig=AOvVaw0ZQtlZP4Vg6oLvqOVZX--4&ust=1650368779090000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLCZ___EnfcCFQAAAAAdAAAAABAD'
+    const defaultImage = 'no-img.gif'
     var value = data.newValue;
 
     var line = value[value.length -1];
