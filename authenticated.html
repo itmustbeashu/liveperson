@@ -17,7 +17,34 @@
         <script>
             // Initialize the lpTag namespace and the identity array, if the identity function is placed above the tag.
           // var lpTag = {};
-   
+            console.log("PUSHED DATA");
+   lpTag.sdes = lpTag.sdes||[];
+lpTag.sdes.push(
+   {
+        "type": "personal",  //MANDATORY
+            "personal": {
+            "firstname": "John",  // FIRST NAME
+            "lastname": "Doe",  // SURNAME
+            "age": {
+               "age": 34,  // AGE AS INTEGER
+               "year": 1980,  // BIRTH YEAR
+               "month": 4,  // BIRTH MONTH
+               "day": 15  // BIRTH DAY
+           },
+            "contacts": [{
+               "email": "myname@example.com",  // EMAIL
+               "phone": "+1 212-788-8877",  // PHONE NUMBER
+               "preferred": "EMAIL",  // EMAIL, PHONE
+               "address": {
+                   "zipcode": "30009"  // ZIP OR POSTAL CODE
+               },
+           }],
+            "gender": "MALE",  // MALE, FEMALE, OTHER
+            "language": "en-US",  // LANGUAGE 
+            "company": "company"  // VISITOR COMPANY NAME
+        }
+   }
+);
           </script>
         <div>
         <table width="100%">
