@@ -17,6 +17,7 @@
         <script>
            // Hard Coded JWT needed for Authentication.
             function getAuthToken(callback) {
+                console.log("Inside Authenticate Function");
                 let token = `eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBc2h1IiwiYWNyIjoibG9hMSIsInN1YiI6IjE2NzIzNjcyIiwibmFtZSI6IkFzaGlzaCBTaW5naCIsImFkbWluIjp0cnVlLCJpYXQiOjE0NDYxMTE3NTIsImV4cCI6MTcxNDE4NTU4MCwiZ2l2ZW5fbmFtZSI6IkFzaGlzaCIsImZhbWlseV9uYW1lIjoiU2luZ2giLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJBc2hpc2hTaW5naCIsInBob25lX251bWJlciI6Ijk2NTQ5MzY0MDcifQ.iQrO4Bvz4ARubRUE_I2gzmAGqNzwr6jpQ2VcFVn1C99UiSQSLtbBWdUqWt0l4_8hrTQ0q5seFtmgQ1_h9VAKQklL1uQxPgxirMZZ5l5AyKvGwdolRMLtVLq8pR3wotfMOqfq7Yckt5J3S7KsNzZ-1FVeZDq2vhBnanltRh7XPW1Z6zF2WNeYCFZ5870bFeEKbdE2osi4SiVLoS0a7McSu2LeEU5AcHiDsLZOjnml0Rn1-5cFsbawqpVlUs7_KELr5D5w7xj8xilXh6FM10ZXR4Ke7AlytTNBedlnPikZZvP6LDSTB-2R0JjHhdooU9xKYkZq14YSKnI8U4nVyGii1Q`
                 callback(token);
             }
