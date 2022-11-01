@@ -92,8 +92,8 @@
 }
 
 /* Class For Card*/
-.lpc_card {
-    border-radius: 8px !important;
+..lpc_mobile.lpc_card {
+    border-radius: 10px !important;
     font-family: Helvetica !important;
     /* max-width: 80% !important; */
 
